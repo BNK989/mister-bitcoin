@@ -6,7 +6,7 @@ import { User } from '../models/user.model';
 })
 export class UserService {
   private _user: User = {
-    fullName: 'Muki Ja',
+    fullName: 'Ben Klino',
     coins: 100,
     moves: []
   }
