@@ -1,27 +1,36 @@
 # MisterBitcoin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This project is a web application built with Angular 17 and utilizes RxJS for asynchronous programming. It is a simple and lightweight Bitcoin wallet tracker that allows users to search for Bitcoin wallets and view their balances.
 
-## Development server
+## Project Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project allows users to search for Bitcoin wallets using their addresses or search for specific keywords. The application uses the Bitcoin API to retrieve the wallet information and display the balance of each wallet. The application also provides a responsive design that adapts to different screen sizes.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 17: A JavaScript framework for building web applications.
+- RxJS: A library for reactive programming using observables and functional reactive programming.
+- Bitcoin API: A RESTful API providing information about Bitcoin wallets and transactions.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository: `git clone https://github.com/YOUR_USERNAME/mister-bitcoin.git`
+2. Install the dependencies: `npm install`
+3. Run the development server: `ng serve`
+4. Open the application in your browser at `http://localhost:4200/`
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Enter a wallet address or keyword in the search bar.
+2. Click the "Search" button or press the Enter key.
+3. The application will retrieve the wallet information from the Bitcoin API and display the balance of each wallet.
+4. The application also provides a responsive design that adapts to different screen sizes.
 
-## Running end-to-end tests
+## Contributing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contributions are welcome! If you find any issues or have suggestions for improvement, please submit a pull request or open an issue.
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
