@@ -1,4 +1,4 @@
-# MisterBitcoin
+# Mr-coin
 
 This project is a web application built with Angular 17 and utilizes RxJS for asynchronous programming. It is a simple and lightweight Bitcoin wallet tracker that allows users to search for Bitcoin wallets and view their balances.
 

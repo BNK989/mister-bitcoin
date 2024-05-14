@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "mr-coin": {
+        "mister-bitcoin": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -24,14 +24,14 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/mr-coin",
+                        "outputPath": "dist/mister-bitcoin",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
+                        "styles": ["src/styles.scss", "src/assets/scss/main.scss"],
                         "scripts": []
                     },
                     "configurations": {
@@ -62,10 +62,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "mr-coin:build:production"
+                            "buildTarget": "mister-bitcoin:build:production"
                         },
                         "development": {
-                            "buildTarget": "mr-coin:build:development"
+                            "buildTarget": "mister-bitcoin:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "mr-coin:build"
+                        "buildTarget": "mister-bitcoin:build"
                     }
                 },
                 "test": {
@@ -83,7 +83,7 @@
                         "tsConfig": "tsconfig.spec.json",
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
+                        "styles": ["src/styles.scss", "src/assets/scss/main.scss"],
                         "scripts": []
                     }
                 }

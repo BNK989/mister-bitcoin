@@ -1,0 +1,31 @@
+@import '../../../assets/scss/setup/vars';
+@import '../../../assets/scss/setup/mixins';
+
+.home-page {
+    @include fullPage;
+    background-color: $homepage-bg-clr;
+    justify-content: space-around;
+
+    .user-greet {
+        margin-block-end: 1em;
+        font-size: 3.6em;
+    }
+
+    p {
+        font-size: 2.4em;
+        font-family: FigtreeBold;
+
+        &.balance {
+            margin-block-end: 1rem;
+        }
+
+        > span {
+            font-family: $main-font-family;
+        }
+    }
+
+    .hero-img {
+        width: 50vw;
+        object-fit: contain;
+    }
+}

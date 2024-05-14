@@ -1,0 +1,16 @@
+<header class="app-header flex align-center justify-between">
+    <h1 class="main-heading">Mr Coin</h1>
+
+    <nav class="main-nav">
+        <ul class="main-nav-list clean-list flex align-center">
+            <li class="nav-link" [class.active]="activeLink === 'home'" (click)="onSetActiveLink('home')">Home</li>
+            <li class="nav-link" [class.active]="activeLink === 'contacts'" (click)="onSetActiveLink('contacts')">
+                Contacts
+            </li>
+
+            <li class="nav-link" [class.active]="activeLink === 'statistic'" (click)="onSetActiveLink('statistic')">
+                Statistics
+            </li>
+        </ul>
+    </nav>
+</header>
