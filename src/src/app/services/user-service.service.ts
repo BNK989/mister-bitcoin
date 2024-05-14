@@ -15,4 +15,3 @@ export class UserService {
     return this._user
   }
 }
-

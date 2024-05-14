@@ -1,0 +1,13 @@
+<section class="home-page flex column align-center justify-center">
+  <h3 class="user-greet">
+    Hello, <span>{{ user.fullName }}</span>
+  </h3>
+
+  <p class="balance">
+    💰 Your balance: <span>{{ user.coins }}</span>
+  </p>
+
+  <p *ngIf="rate" class="rate">
+    📈 Current bitcoin rate: <span>{{ rate }}</span>
+  </p>
+</section>
