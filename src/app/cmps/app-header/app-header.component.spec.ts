@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { AppHeader } from './app-header.component';
+import { AppHeader } from './app-header.component'
 
 describe('AppHeader', () => {
-  let component: AppHeader;
-  let fixture: ComponentFixture<AppHeader>;
+    let component: AppHeader
+    let fixture: ComponentFixture<AppHeader>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [AppHeader]
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            declarations: [AppHeader],
+        }).compileComponents()
+
+        fixture = TestBed.createComponent(AppHeader)
+        component = fixture.componentInstance
+        fixture.detectChanges()
     })
-      .compileComponents();
 
-    fixture = TestBed.createComponent(AppHeader);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('should create', () => {
+        expect(component).toBeTruthy()
+    })
+})

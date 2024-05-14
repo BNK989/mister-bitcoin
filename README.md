@@ -8,13 +8,13 @@ The project allows users to search for Bitcoin wallets using their addresses or 
 
 ## Technologies Used
 
-- Angular 17: A JavaScript framework for building web applications.
-- RxJS: A library for reactive programming using observables and functional reactive programming.
-- Bitcoin API: A RESTful API providing information about Bitcoin wallets and transactions.
+-   Angular 17: A JavaScript framework for building web applications.
+-   RxJS: A library for reactive programming using observables and functional reactive programming.
+-   Bitcoin API: A RESTful API providing information about Bitcoin wallets and transactions.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/YOUR_USERNAME/mister-bitcoin.git`
+1. Clone the repository: `git clone https://github.com/YOUR_USERNAME/mr-coin.git`
 2. Install the dependencies: `npm install`
 3. Run the development server: `ng serve`
 4. Open the application in your browser at `http://localhost:4200/`
@@ -33,4 +33,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-

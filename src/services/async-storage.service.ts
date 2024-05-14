@@ -12,12 +12,12 @@ interface EntityId {
 
 function query<T>(entityType: string, delay = 200): Promise<T[]> {
     var entities = JSON.parse(localStorage.getItem(entityType) as string) || []
-    return new Promise(resolve => setTimeout(() => resolve(entities), delay))
+    return new Promise((resolve) => setTimeout(() => resolve(entities), delay))
 }
 
 async function get<T extends EntityId>(entityType: string, entityId: string): Promise<T> {
     const entities = await query<T>(entityType)
-    const entity = entities.find(entity_1 => entity_1._id === entityId)
+    const entity = entities.find((entity_1) => entity_1._id === entityId)
     if (!entity) throw new Error(`Get failed, cannot find entity with id: ${entityId} in: ${entityType}`)
     return entity
 }
@@ -34,7 +34,7 @@ async function post<T extends EntityId>(entityType: string, newEntity: T): Promi
 async function put<T extends EntityId>(entityType: string, updatedEntity: T): Promise<T> {
     updatedEntity = JSON.parse(JSON.stringify(updatedEntity))
     const entities = await query<T>(entityType)
-    const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
+    const idx = entities.findIndex((entity) => entity._id === updatedEntity._id)
     if (idx < 0) throw new Error(`Update failed, cannot find entity with id: ${updatedEntity._id} in: ${entityType}`)
     entities.splice(idx, 1, updatedEntity)
     _save(entityType, entities)
@@ -43,11 +43,10 @@ async function put<T extends EntityId>(entityType: string, updatedEntity: T): Pr
 
 async function remove<T extends EntityId>(entityType: string, entityId: string): Promise<void> {
     const entities = await query<T>(entityType)
-    const idx = entities.findIndex(entity => entity._id === entityId)
+    const idx = entities.findIndex((entity) => entity._id === entityId)
     if (idx < 0) throw new Error(`Remove failed, cannot find entity with id: ${entityId} in: ${entityType}`)
     entities.splice(idx, 1)
     _save(entityType, entities)
-
 }
 
 // Private functions
