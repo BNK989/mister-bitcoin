@@ -9,7 +9,6 @@ import { ContactService } from '../services/contact.service'
 })
 export class AppComponent implements OnInit {
     private contactService = inject(ContactService)
-    activeView = 'home'
 
     ngOnInit(): void {
         this.contactService
@@ -18,9 +17,5 @@ export class AppComponent implements OnInit {
             .subscribe({
                 error: (err) => console.log('Had issues loading contacts:', err),
             })
-    }
-
-    setActiveView(view: string): void {
-        this.activeView = view
     }
 }

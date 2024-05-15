@@ -1,16 +1,36 @@
 @import '../../../assets/scss/setup/vars';
+@import '../../../assets/scss/setup/mixins';
 
 .contact-details {
-    .btn-go-back {
-        padding: 0.8em 1.6em;
-        border-radius: 2em;
-        margin-inline-start: 3em;
+    @include fullPage;
+    background-color: $contact-page-bg-clr;
 
-        font-size: 1.6em;
-        background-color: $btn-go-back-clr;
+    .btn-container {
+        width: 40vw;
+        margin-block-start: 2em;
 
-        &:hover {
-            background-color: darken($btn-go-back-clr, 10%);
+        .btn {
+            padding: 1.6rem;
+            border-radius: 2rem;
+
+            font-size: 1.6em;
+            background-color: $btn-go-back-clr;
+
+            &::after {
+                font-family: faSolid;
+            }
+
+            &.btn-go-back::after {
+                content: '\f060';
+            }
+
+            &.btn-edit-contact::after {
+                content: '\f4ff';
+            }
+
+            &:hover {
+                background-color: darken($btn-go-back-clr, 10%);
+            }
         }
     }
 
@@ -28,10 +48,5 @@
         .contact-img {
             margin-block-start: 1.5em;
         }
-    }
-
-    .loading-msg {
-        font-size: 2em;
-        margin-inline-start: 3em;
     }
 }

@@ -1,6 +1,0 @@
-@import '../../../assets/scss/setup/vars';
-
-@mixin fullPage {
-    min-height: calc(100dvh - $app-header-height);
-    width: 100vw;
-}
