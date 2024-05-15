@@ -93,7 +93,7 @@ export class UserService {
     }
 
     private _createUsers() {
-        const user1: User = { _id: 'u123', fullName: 'Muki Ja', coins: 100, moves: [] }
+        const user1: User = { _id: 'u123', fullName: 'Ben Klino', coins: 100, moves: [] }
         const user2: User = { _id: 'u124', fullName: 'Bobo Ba', coins: 100, moves: [] }
 
         return [user1, user2]
