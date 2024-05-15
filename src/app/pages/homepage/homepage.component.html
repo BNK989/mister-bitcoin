@@ -9,11 +9,11 @@
         </div>
 
         <p class="balance">
-            💰 Your balance: <span>{{ user.coins }}</span>
+            Your balance: <span>{{ user.coins }}</span>
         </p>
 
         <p *ngIf="rate" class="rate">
-            📈 Current bitcoin rate: <span>{{ rate }}</span>
+            Current bitcoin rate: <span>{{ rate }}</span>
         </p>
 
         <move-list
@@ -23,5 +23,5 @@
             [title]="'Last Transactions:'"></move-list>
     </div>
 
-    <img src="/assets/img/hero-img.jpeg" alt="Bitcoins image" class="hero-img" />
+    <img src="/assets/img/hero-img.jpeg" alt="Bitcoins image" class="rounded-full h-[40dvh] my-auto" />
 </section>

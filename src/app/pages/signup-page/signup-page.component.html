@@ -1,11 +1,12 @@
 <section class="signup-page flex column align-center">
-    <img src="/assets/img/signup.png" alt="Bitcoin icon" class="signup-img" />
-    <h1 class="main-heading">Welcome to Mr Coin</h1>
+    <img src="/assets/img/signup.png" alt="Bitcoin icon" class="signup-img w-40 mt-4" />
+    <h1 class="main-heading">Mr Coin</h1>
+    <h3 class="text-6xl mb-4">Welcome</h3>
 
-    <form #signupForm="ngForm" (ngSubmit)="onSignup()" class="flex column align-center">
-        <label for="name">Please enter your name to enjoy our service</label>
-        <input [(ngModel)]="username" #name="ngModel" type="text" name="name" id="name" autocomplete="off" required />
+    <form #signupForm="ngForm" (ngSubmit)="onSignup()" class="flex column align-center max-w-fit">
+        <label class="text-xl" for="name">Please enter your name to start</label>
+        <input class="rounded focus-visible:outline-none" [(ngModel)]="username" #name="ngModel" type="text" name="name" id="name" autocomplete="off" required placeholder="Enter name" />
 
-        <button class="btn-submit" [disabled]="signupForm.invalid">Submit</button>
+        <button class="w-44 h-10 bg-blue-700 text-white rounded text-2xl cursor-pointer hover:bg-opacity-70 transition-all" [disabled]="signupForm.invalid">Submit</button>
     </form>
 </section>
