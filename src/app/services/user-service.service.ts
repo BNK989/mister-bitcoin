@@ -70,6 +70,8 @@ export class UserService {
         this._loggedInUser.coins -= amount
 
         this._setLoggedInUser(this._loggedInUser)
+
+        return this._loggedInUser
     }
 
     private _setLoggedInUser(user: User) {
